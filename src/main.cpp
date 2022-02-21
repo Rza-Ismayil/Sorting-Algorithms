@@ -3,23 +3,27 @@
 
 #include "simple.hpp"
 #include "selection.hpp"
+#include "bubble.hpp"
 
 void printArray(int *array, int size);
 
 int main(int argc, char **argv)
 {
 
-	int array[] = {0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
+	int array[] = {18, 8, 22, 20, 16, 2, 12, 10, 6, 0, 14, 4};
 	int size = sizeof(array) / sizeof(int);
+	printf("%d\n", size);
+	printArray(array, size);
 
 
 	// SIMPLE SORT ~ O(n^2)
 	// simpleSort(array, size);
 
 	// SELECTION SORT ~ O(n^2)
-	selectionSort(array, size);
+	// selectionSort(array, size);
 
-
+	// BUBBLE SORT ~ O(n^2)
+	bubbleSort(array, size);
 
 	printArray(array, size);
 

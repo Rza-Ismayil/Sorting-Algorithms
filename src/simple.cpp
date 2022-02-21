@@ -10,9 +10,7 @@ void simpleSort(int * array, int size)
         {
             if (array[j] < array[i])
             {
-                temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
+                swap(array, i, j);
             }
         }
     }
