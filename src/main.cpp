@@ -13,10 +13,10 @@ int main(int argc, char **argv)
 	int size = sizeof(array) / sizeof(int);
 
 
-	// SIMPLE SORT
+	// SIMPLE SORT ~ O(n^2)
 	// simpleSort(array, size);
 
-	// SELECTION SORT
+	// SELECTION SORT ~ O(n^2)
 	selectionSort(array, size);
 
 
