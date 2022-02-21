@@ -4,6 +4,7 @@
 #include "simple.hpp"
 #include "selection.hpp"
 #include "bubble.hpp"
+#include "insertion.hpp"
 
 void printArray(int *array, int size);
 
@@ -12,7 +13,6 @@ int main(int argc, char **argv)
 
 	int array[] = {18, 8, 22, 20, 16, 2, 12, 10, 6, 0, 14, 4};
 	int size = sizeof(array) / sizeof(int);
-	printf("%d\n", size);
 	printArray(array, size);
 
 
@@ -23,7 +23,10 @@ int main(int argc, char **argv)
 	// selectionSort(array, size);
 
 	// BUBBLE SORT ~ O(n^2)
-	bubbleSort(array, size);
+	// bubbleSort(array, size);
+
+	// INSERTION SORT ~ O(n^2)
+	insertionSort(array, size);
 
 	printArray(array, size);
 
