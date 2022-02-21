@@ -5,6 +5,7 @@
 #include "selection.hpp"
 #include "bubble.hpp"
 #include "insertion.hpp"
+#include "dictionaryMap.hpp"
 
 void printArray(int *array, int size);
 
@@ -26,7 +27,10 @@ int main(int argc, char **argv)
 	// bubbleSort(array, size);
 
 	// INSERTION SORT ~ O(n^2)
-	insertionSort(array, size);
+	// insertionSort(array, size);
+
+	// RZA'S IDEA  ~ MAX(size, range)
+	dictionarySort(array, size);
 
 	printArray(array, size);
 
