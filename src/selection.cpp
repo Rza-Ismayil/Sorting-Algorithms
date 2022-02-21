@@ -1,12 +1,5 @@
 #include "selection.hpp"
 
-void swap(int *a, int x, int y)
-{
-    int temp = a[x];
-    a[x] = a[y];
-    a[y] = temp;
-}
-
 int locationOfSmallest(int *array, int start, int end)
 {
     int minIndex = start;
