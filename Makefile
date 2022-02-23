@@ -5,6 +5,8 @@ OBJdir = bin
 HDRdir = hdr
 SRCdir = src
 
+FLAGS = -Wall
+
 obj = $(patsubst $(SRCdir)/%$(EX), $(OBJdir)/%.o, $(wildcard $(SRCdir)/*))
 hdr = $(wildcard $(HDRdir)/*)
 
@@ -21,4 +23,4 @@ $(OBJdir)/run: $(obj)
 	$(COMPILER) $^ -o $@ 
 
 $(OBJdir)/%.o: $(SRCdir)/%$(EX) $(hdr)
-	$(COMPILER) -c $< -o $@ -I "$(HDRdir)/" -Wall
+	$(COMPILER) -c $< -o $@ -I "$(HDRdir)/" $(FLAGS)
