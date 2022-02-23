@@ -1,5 +1,5 @@
-COMPILER = g++
-EX = .cpp
+COMPILER = gcc
+EX = .c
 
 OBJdir = bin
 HDRdir = hdr
@@ -14,11 +14,11 @@ run: $(OBJdir)/run
 	./$^
 
 clean:
-	@if [ -f $(OBJdir)/*.o ]; then rm $(OBJdir)/*.o; fi
-	@if [ -f $(OBJdir)/run ]; then rm $(OBJdir)/run; fi
+		@if find $(OBJdir) -mindepth 1 -maxdepth 1 | read; then rm $(OBJdir)/*; fi
+
 
 $(OBJdir)/run: $(obj)
-	$(COMPILER) $^ -o $@
+	$(COMPILER) $^ -o $@ 
 
 $(OBJdir)/%.o: $(SRCdir)/%$(EX) $(hdr)
-	$(COMPILER) -c $< -o $@ -I "$(HDRdir)/"
+	$(COMPILER) -c $< -o $@ -I "$(HDRdir)/" -Wall

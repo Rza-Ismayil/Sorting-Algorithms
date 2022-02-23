@@ -1,4 +1,4 @@
-#include "insertion.hpp"
+#include "insertion.h"
 
 void insert(int *array, int size, int index)
 {

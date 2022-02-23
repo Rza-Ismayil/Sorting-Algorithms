@@ -1,4 +1,4 @@
-#include "bubble.hpp"
+#include "bubble.h"
 
 void bubble(int * array, int size)
 {

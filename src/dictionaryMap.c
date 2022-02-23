@@ -1,4 +1,4 @@
-#include "dictionaryMap.hpp"
+#include "dictionaryMap.h"
 
 void findMinAndMax(int *array, int size, int *min, int *max)
 {

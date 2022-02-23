@@ -1,4 +1,4 @@
-#include "selection.hpp"
+#include "selection.h"
 
 int locationOfSmallest(int *array, int start, int end)
 {
