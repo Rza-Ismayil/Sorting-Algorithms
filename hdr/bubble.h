@@ -6,7 +6,7 @@
 
 #include "commons.h"
 
-void bubble(int * array, int size);
+int bubble(int * array, int size);
 void bubbleSort(int * array, int size);
 
 #endif // __BUBBLE__
