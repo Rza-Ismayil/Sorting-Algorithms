@@ -1,5 +1,5 @@
-#ifndef __INSERTION__
-#define __INSERTION__
+#ifndef __INSERTION_SEARCH__
+#define __INSERTION_SEARCH__
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,4 +9,4 @@
 void insert(int *array, int size, int index);
 void insertionSort(int *array, int size);
 
-#endif // __INSERTION__
+#endif // __INSERTION_SEARCH__

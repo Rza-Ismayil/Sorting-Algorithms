@@ -1,5 +1,5 @@
-#ifndef __BUBBLE__
-#define __BUBBLE__
+#ifndef __BUBBLE_SEARCH__
+#define __BUBBLE_SEARCH__
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,4 +9,4 @@
 int bubble(int * array, int size);
 void bubbleSort(int * array, int size);
 
-#endif // __BUBBLE__
+#endif // __BUBBLE_SEARCH__

@@ -1,5 +1,5 @@
-#ifndef __SIMPLE__
-#define __SIMPLE__
+#ifndef __SIMPLE_SEARCH__
+#define __SIMPLE_SEARCH__
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,4 +8,4 @@
 
 void simpleSort(int * array, int size);
 
-#endif // __SIMPLE__
+#endif // __SIMPLE_SEARCH__

@@ -14,3 +14,7 @@ int isSorted(int * array, int length) {
             return 0;
     } return 1;
 }
+
+void cleanBuffer() {
+	while (getchar() != '\n');
+}

@@ -7,10 +7,8 @@
 #include "bubble.h"
 #include "insertion.h"
 #include "dictionaryMap.h"
-#include "search.h"
 
 void printArray(int *array, int size);
-void cleanBuffer();
 
 int main(int argc, char **argv) {
 
@@ -26,19 +24,8 @@ int main(int argc, char **argv) {
 	// INSERTION SORT ~ O(n^2)
 	// insertionSort(array, size);
 	// RZA'S IDEA ~ MAX(size, range)
-	// dictionarySort(array, size);
-	// printArray(array, size);
-
-	char str[255];
-	char target;
-	scanf("%[^\n]", str);
-	cleanBuffer();
-	scanf("%c", &target);
-	int index = linearSearchR(str, strlen(str), target);
-	if (index != -1)
-		printf("The index of '%c' in stirng '%s' is %d\n",target, str, index);
-	else
-		printf("The target '%c' not found in string '%s'\n", target, str);
+	dictionarySort(array, size);
+	printArray(array, size);
 
 	return 0;
 }
@@ -50,8 +37,4 @@ void printArray(int *array, int size) {
 	}
 
 	printf(" %d \n", array[size - 1]);
-}
-
-void cleanBuffer() {
-	while (getchar() != '\n');
 }

@@ -2,7 +2,7 @@ COMPILER = gcc
 EX = .c
 
 OBJdir = bin
-HDRdir = hdr
+HDRdir = include
 SRCdir = src
 
 FLAGS = -Wall
@@ -23,4 +23,4 @@ $(OBJdir)/run: $(obj)
 	$(COMPILER) $^ -o $@ 
 
 $(OBJdir)/%.o: $(SRCdir)/%$(EX) $(hdr)
-	$(COMPILER) -c $< -o $@ -I "$(HDRdir)/" $(FLAGS)
+	$(COMPILER) -I "$(HDRdir)/" $(FLAGS) -c $< -o $@
